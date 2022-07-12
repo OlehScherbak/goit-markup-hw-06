@@ -726,7 +726,6 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   background-color: var(--main-background-color);
-  /* transition: transform var(--trans-duration) var(--timing-function); */
 }
 
 .button-modal {
@@ -744,4 +743,63 @@ address {
 .button-modal:hover,
 .button-modal:focus {
   background-color: rgba(250, 4, 4, 0.7);
+}
+
+.callback-form {
+  padding: 40px 39px 40px 41px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+/* .form-input.tel::before {
+  content: '';
+  background-image: url(../images/icons.svg#icon-phone);
+  width: 18px;
+  height: 18px;
+} */
+
+.form-input:hover,
+.form-input:focus,
+.form-input:focus-within {
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+
+.form-input:hover .input-icon,
+.form-input:focus .input-icon {
+  fill: var(--axcent);
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.textarea-comment {
+  height: 120px;
+  resize: none;
+}
+
+.agreement-link {
+  text-decoration: underline;
+  color: var(--axcent);
+}
+
+.callback-submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
