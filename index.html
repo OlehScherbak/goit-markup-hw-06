@@ -458,7 +458,7 @@
         <form name="signup" class="signup-form">
           <p class="form-caption">Подпишитесь на рассылку</p>
           <label>
-            <input class="input-email" type="email" name="email" placeholder="e-mail" />
+            <input class="input-email" type="email" name="email" placeholder="E-mail" />
           </label>
           <button class="signup-button" type="submit">
             Подписаться
@@ -473,60 +473,54 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-modal-close" type="button" data-modal-close>
-          <svg width="11" height="11">
+          <svg class="button-close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
         <form class="callback-form">
           <h2 class="callback-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <div class="form-field">
-            <label class="form-input-label" for="name">Имя</label>
-            <span
-              ><svg class="input-icon" aria-hidden="true">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </span>
+
+          <label class="form-input-label" for="name"
+            >Имя
             <input class="form-input" type="text" name="name" id="name" />
-          </div>
+            <svg class="input-icon" aria-hidden="true">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
 
-          <div class="form-field">
-            <label class="form-input-label" for="tel">Телефон</label>
-            <span
-              ><svg class="input-icon" aria-hidden="true">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </span>
-            <input class="form-input tel" type="tel" name="tel" id="tel" />
-          </div>
+          <label class="form-input-label" for="tel"
+            >Телефон
+            <input class="form-input" type="tel" name="tel" id="tel" />
+            <svg class="input-icon" aria-hidden="true">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
 
-          <div class="form-field">
-            <label class="form-input-label" for="email">Почта</label>
-            <span
-              ><svg class="input-icon" aria-hidden="true">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </span>
+          <label class="form-input-label" for="email"
+            >Почта
             <input class="form-input" type="email" name="email" id="email" />
-          </div>
+            <svg class="input-icon" aria-hidden="true">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
 
-          <div class="form-field">
-            <label class="form-input-label" for="comment">Комментарий</label>
+          <label class="form-input-label" for="comment"
+            >Комментарий
             <textarea
               class="form-input textarea-comment"
               name="comment"
               id="comment"
               placeholder="Введите текст"
             ></textarea>
-          </div>
+          </label>
 
-          <div class="form-checkbox-field">
-            <input type="checkbox" name="user-consent" id="user-consent" />
-            <label class="user-consent-label" for="user-consent"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-link" href="">Условия договора</a></label
-            >
-          </div>
+          <label class="user-consent-label">
+            <input class="input-checkbox" type="checkbox" name="user-consent" />
+            <span class="icon-check"> </span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="agreement-link" href="">Условия договора</a>
+          </label>
 
           <button type="submit" class="callback-submit-button">Отправить</button>
         </form>
