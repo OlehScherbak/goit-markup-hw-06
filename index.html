@@ -472,15 +472,16 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-modal" type="button" data-modal-close>
+        <button class="button-modal-close" type="button" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
         <form class="callback-form">
+          <h2 class="callback-form-title">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="form-field">
-            <label class="form-label" for="name">Имя</label>
+            <label class="form-input-label" for="name">Имя</label>
             <span
               ><svg class="input-icon" aria-hidden="true">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -490,7 +491,7 @@
           </div>
 
           <div class="form-field">
-            <label class="form-label" for="tel">Телефон</label>
+            <label class="form-input-label" for="tel">Телефон</label>
             <span
               ><svg class="input-icon" aria-hidden="true">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -500,7 +501,7 @@
           </div>
 
           <div class="form-field">
-            <label class="form-label" for="email">Почта</label>
+            <label class="form-input-label" for="email">Почта</label>
             <span
               ><svg class="input-icon" aria-hidden="true">
                 <use href="./images/icons.svg#icon-email"></use>
@@ -510,15 +511,23 @@
           </div>
 
           <div class="form-field">
-            <label class="form-label" for="comment">Комментарий</label>
-            <textarea class="form-input textarea-comment" name="comment" id="comment"></textarea>
+            <label class="form-input-label" for="comment">Комментарий</label>
+            <textarea
+              class="form-input textarea-comment"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
           </div>
 
-          <input type="checkbox" name="user-consent" id="user-consent" />
-          <label for="user-consent"
-            >Соглашаюсь с рассылкой и принимаю
-            <a class="agreement-link" href="">Условия договора</a></label
-          >
+          <div class="form-checkbox-field">
+            <input type="checkbox" name="user-consent" id="user-consent" />
+            <label class="user-consent-label" for="user-consent"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="agreement-link" href="">Условия договора</a></label
+            >
+          </div>
+
           <button type="submit" class="callback-submit-button">Отправить</button>
         </form>
       </div>
