@@ -454,6 +454,7 @@ address {
 .footer-flex {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .address-container {
