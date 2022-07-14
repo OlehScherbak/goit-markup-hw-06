@@ -763,25 +763,32 @@ address {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
 }
 
 .form-input-label {
   display: flex;
   flex-direction: column;
-  position: relative;
   font-size: 12px;
   letter-spacing: 0.01em;
   color: var(--text-grey);
 }
 
+.input-label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
 .form-input {
   height: 40px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  margin-top: 4px;
-  margin-bottom: 10px;
   transition: border-color var(--trans-duration) var(--timing-function);
 }
 
@@ -802,7 +809,7 @@ address {
   left: 12px;
   width: 18px;
   height: 18px;
-  transform: translateY(-25%);
+  transform: translateY(-50%);
   transition: fill var(--trans-duration) var(--timing-function);
 }
 
@@ -825,6 +832,11 @@ address {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.input-checkbox:hover + .icon-check,
+.input-checkbox:focus + .icon-check {
+  outline: auto;
 }
 
 .user-consent-label {
